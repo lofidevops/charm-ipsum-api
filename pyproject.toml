@@ -1,0 +1,42 @@
+# SPDX-License-Identifier: AGPL-3.0-or-later
+# SPDX-FileCopyrightText: Copyright 2023 Canonical Ltd
+
+[project]
+name = "ipsumapi"
+description = "An API that generates meaningless but familiar text."
+authors = [
+    { name = "David Seaward", email = "david.seaward@canonical.com" },
+]
+dependencies = [
+]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "AGPL-3.0-or-later" }
+dynamic = ["version"]
+
+[project.optional-dependencies]
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[project.scripts]
+ipsumapi = "ipsumapi.cli:invoke"
+
+[project.urls]
+"Source" = "https://github.com/lofidevops/charm-ipsum-api"
+"Project" = "https://github.com/lofidevops/charm-ipsum-api"
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "carmine>=0.0.3",
+]
+
+[tool.pdm.version]
+source = "scm"
+
+[tool.syllabub.project]
+conduct = "ubuntu-2.0"
+copyright = "Copyright 2023 Canonical Ltd"
+origin = "DCO-1.1-git-signoff"
+title = "Ipsum API"

@@ -1,0 +1,7 @@
+Name                       Stmts   Miss  Cover
+----------------------------------------------
+src/ipsumapi/__init__.py       0      0   100%
+src/ipsumapi/cli.py            4      1    75%
+tests/test_cli.py              4      0   100%
+----------------------------------------------
+TOTAL                          8      1    88%
