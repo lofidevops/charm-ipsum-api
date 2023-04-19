@@ -8,6 +8,7 @@ authors = [
     { name = "David Seaward", email = "david.seaward@canonical.com" },
 ]
 dependencies = [
+    "fastapi[all]>=0.95.1",
 ]
 requires-python = ">=3.10"
 readme = "README.md"
@@ -21,7 +22,7 @@ requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
 [project.scripts]
-ipsumapi = "ipsumapi.cli:invoke"
+ipsumapi = "ipsumapi.main:invoke"
 
 [project.urls]
 "Source" = "https://github.com/lofidevops/charm-ipsum-api"
